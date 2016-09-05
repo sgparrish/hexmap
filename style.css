@@ -1,0 +1,43 @@
+html,
+body,
+div {
+   height: 100%;
+   margin: 0;
+}
+
+#mapPane {
+   background-color: #ddd;
+   width: 33%;
+   float: left;
+}
+
+#slider {
+   background: #aaa;
+   border-left: 1px solid #888;
+   width: 5px;
+   float: left;
+   cursor: col-resize;
+   z-index: 1;
+}
+
+#textPane {
+   background: #fff;
+   left: 33%;
+   right: 0;
+   float: right;
+   position: absolute;
+   overflow-y: scroll;
+}
+
+#mainCanvas {
+   cursor: move;
+   cursor: grab;
+   cursor: -moz-grab;
+   cursor: -webkit-grab;
+}
+
+#mainCanvas:active {
+   cursor: grabbing;
+   cursor: -moz-grabbing;
+   cursor: -webkit-grabbing;
+}
